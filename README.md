@@ -93,9 +93,6 @@ playwright install-deps
 python -m Interface.main 2> >(grep -v "pthread_setaffinity_np")
 ```
 
-Note: grep -v "pthread_setaffinity_np"
-This command filters out any problematic lines containing pthread_setaffinity_np during logs or script output. It’s a harmless workaround sometimes used in environments where specific system calls cause warnings or crashes.
-
 This command triggers the full end-to-end pipeline:
 
 1. Scrapes and screenshots the input chapter  
@@ -103,6 +100,8 @@ This command triggers the full end-to-end pipeline:
 3. Prompts for optional human edits (v2, v3…)  
 4. Saves finalized versions, metadata, and screenshots  
 5. Logs the entire process with timestamps
+
+Note: This command "grep -v "pthread_setaffinity_np" filters out any problematic lines containing pthread_setaffinity_np during logs or script output. It’s a harmless workaround sometimes used in environments where specific system calls cause warnings or crashes.
 
 ---
 

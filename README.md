@@ -47,6 +47,9 @@ ScriptWeaver/
 └── README.md              # You're reading it now
 
 Demo Video Link: https://1drv.ms/v/c/f5acb3ec174cc281/EUQDurJNz1hFs_oY07Y_YwcBucG-g4fP69H0rTN09m2UVg
+
+ScriptWeaver_Presentation.pdf: A visual walkthrough of the entire system.
+
 ```
 
 ---
